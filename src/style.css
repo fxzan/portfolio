@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-fade-in-left: fadeInLeft 0.4s ease-in;
+
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-0.5rem);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* ------------------------- Color Tokens -------------------------- */
+  --color-bg:        #0D0D0D;
+  --color-surface:   #161616;
+  --color-card:      #1C1C1C;
+  --color-card-h:    #222222;
+  --color-border:    #2A2A2A;
+  --color-text-1:    #F0F0F0;
+  --color-text-2:    #A0A0A0;
+  --color-text-3:    #555555;
+  --color-accent:    #E8E8E8;
+  --color-on-accent: #0D0D0D;
+
+  /* ------------------------- Font Family --------------------------- */
+  --font-display: "Inter", sans-serif;
+  --font-mono: "DM Mono", monospace;
+}
+
+@layer base {
+  :root{
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-bg font-display leading-[1.65] text-text-2 flex flex-col min-h-screen;
+  }
+
+  h2 {
+    @apply text-[clamp(1.6rem,3vw,2.2rem)]/[1.25] tracking-[-0.02em] font-semibold text-text-1;
+  }
+
+  h3 {
+    @apply text-[clamp(1.4rem,3vw,1.9rem)]/[1.25] tracking-[-0.02em] font-semibold text-text-1;
+  }
+
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent;
+  }
+}
+
+@layer components {
+  .text-hero {
+    @apply text-[clamp(3.5rem,8vw,7rem)]/[1.05] tracking-[0.02em] font-light text-text-1;
+  }
+
+  .text-portfolio-title {
+    @apply text-[clamp(2rem,5vw,3.5rem)]/[1.1] tracking-[0.01em] font-light text-text-1
+  }
+
+  .text-feature-title {
+    @apply text-[0.9375rem]/[1.4] font-medium text-text-1;
+  }
+
+  .text-body-lg {
+    @apply text-[0.9375rem]/[1.75];
+  }
+
+  .text-body-sm {
+    @apply text-[0.875rem]/[1.7];
+  }
+
+  .text-overline {
+    @apply font-mono text-[0.7rem] tracking-[0.12em] font-medium text-text-3 mb-5 lowercase;
+  }
+
+  .text-placeholder {
+    @apply font-mono text-[0.7rem] tracking-[0.12em] font-medium text-text-3 text-center;
+  }
+  
+  .text-work-dates {
+    @apply font-mono text-[0.75rem] text-text-3;
+  }
+
+  .text-caption {
+    @apply text-[0.75rem]/[1.5] text-text-3;
+  }
+
+  .text-logo {
+    @apply font-mono tracking-wider font-medium text-text-1;
+  }
+
+  .nav-link {
+    @apply text-[0.875rem] text-text-2;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus,
+  .nav-link[aria-current="page"] {
+    @apply text-accent;
+  }
+
+  .footer-link {
+    @apply text-text-3;
+  }
+
+  .footer-link:hover,
+  .footer-link:focus {
+    @apply text-text-2;
+  }
+
+  .main-container {
+    @apply max-w-225 w-full mx-auto px-8;
+  }
+
+  .btn {
+    @apply text-[0.875rem] tracking-[0.01em] rounded-sm py-[0.65rem] px-6 transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-accent text-on-accent font-medium;
+  }
+
+  .btn-primary:hover,
+  .btn-primary:focus {
+    @apply bg-white;
+  }
+
+  .btn-secondary {
+    @apply bg-card text-text-2
+  }
+
+  .btn-secondary:hover,
+  .btn-secondary:focus {
+    @apply bg-card-h text-text-1 shadow-[inset_0_0_0_1px_var(--color-text-3)]
+  }
+
+  .link-ico {
+    @apply text-[0.65rem] -translate-y-1 inline-block;
+  }
+
+  .tech-tag-group {
+    @apply flex flex-wrap gap-2 transition-all duration-300;
+  }
+
+  .tech-tag {
+    @apply font-mono text-[0.7rem] tracking-[0.04em] text-text-3 bg-card border border-border py-1 px-[0.6rem] rounded-sm;
+  }
+
+  .screenshot {
+    @apply bg-card border border-border rounded-sm aspect-16/10 flex items-center justify-center overflow-hidden;
+  }
+
+  .screenshot-wide {
+    @apply col-span-full aspect-16/10 sm:aspect-16/7;
+  }
+
+  .accordion-trigger {
+    @apply flex items-center justify-between px-5 py-[1.1rem] border-b border-border cursor-pointer;
+  }
+
+  .accordion-trigger:hover,
+  .accordion-trigger[aria-expanded="true"] {
+    @apply bg-card-h;
+  }
+
+  .accordion-icon {
+    @apply  text-text-3 font-semibold transition-all duration-300;
+  }
+
+  .accordion-body {
+    @apply overflow-hidden transition-all duration-300 max-h-0
+  }
+
+  .accordion-body-inner {
+    @apply flex flex-col gap-4 p-5 bg-card-h border-b border-border;
+  }
+}
+
+.hdr-scrolled {
+  @apply bg-surface/90 border-border backdrop-blur-[10px];
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
