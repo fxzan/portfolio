@@ -1,7 +1,20 @@
 # fxzan — Portfolio Site
 **URL:** https://fxzan.dev  
-**Stack:** Pure HTML · Vanilla JS · Tailwind CSS  
-**Theme:** Permanent dark mode — no toggle, no light variant
+**Stack:** Pure HTML · Vanilla JS · Tailwind CSS
+
+---
+---
+# Core Features
+
+- Custom single-page router built in vanilla JS — link interception, `history.pushState`, and a `getPath()` helper that respects a configurable base path
+- Focus-trapped, animated mobile navigation with `AbortController`-scoped listeners and `Escape`-to-close
+- Accessible accordion for secondary projects — single-panel-open behavior, `aria-expanded` / `aria-controls`, inert on closed panels
+- Scroll-aware header — transitions to a blurred surface background past a scroll threshold
+- Capstone project sections with full screenshot grids, plus a collapsed accordion for smaller builds
+- Custom 404 route
+- Full keyboard navigation and `:focus-visible` styling throughout
+- `prefers-reduced-motion` support — all transitions collapse to near-zero
+Responsive layout — burger menu below 640px, grid reflow on About and Portfolio pages
 
 ---
 ---
