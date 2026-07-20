@@ -3,7 +3,7 @@
 
 A personal portfolio built using vanilla JS, single-page app with a custom router, permanent dark theme, and full accessibility
 
-**Category:** Vanilla - HTML/CSS/JavaScript/Tailwind CSS only
+**Category:** Vanilla - HTML/CSS/JavaScript/Tailwind CSS only  
 **Stack:** Pure HTML · Vanilla JS · Tailwind CSS
 
 ---
