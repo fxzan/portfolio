@@ -1,5 +1,9 @@
 # fxzan — Portfolio Site
-**URL:** https://fxzan.dev  
+**URL:** https://fxzan.github.io/portfolio/
+
+A personal portfolio built using vanilla JS, single-page app with a custom router, permanent dark theme, and full accessibility
+
+**Category:** Vanilla - HTML/CSS/JavaScript/Tailwind CSS only
 **Stack:** Pure HTML · Vanilla JS · Tailwind CSS
 
 ---
