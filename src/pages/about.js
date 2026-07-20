@@ -28,7 +28,8 @@ export default function renderAbout() {
               Professionally, my background is in technical support, working closely with engineering and product teams to debug platform issues at scale — work that's shaped how I think about reliability and edge cases as a developer.
             </p>
             <p class="max-w-[65ch] mt-4">
-              Currently open to full-time roles and select freelance projects where the brief is interesting and the standard is high.
+              <!-- Currently open to full-time roles and select freelance projects where the brief is interesting and the standard is high. -->
+              Currently doing awesome things as a Product Support Engineer at NOVA.
             </p>
           </div>
         </div>
@@ -70,7 +71,7 @@ export default function renderAbout() {
         <div class="main-container flex flex-col">
           <span class="text-overline">// contact</span>
           <h2>Get in touch</h2>
-          <p class="text-body-lg max-w-[48ch] mt-4">Open to full-time roles and freelance projects. The best way to reach me is by email.</p>
+          <p class="text-body-lg max-w-[48ch] mt-4">Open to exciting freelance projects, creative collaborations, or just connecting with fellow industry professionals. The best way to reach me is by email.</p>
           <div class="flex gap-3 flex-wrap mt-8">
             <a href="mailto:baig.faizan1999@gmail.com" class="btn btn-secondary">Email <span class="link-ico">↗</span></a>
             <a href="https://github.com/fxzan" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub <span class="link-ico">↗</span></a>
