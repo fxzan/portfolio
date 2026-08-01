@@ -1,6 +1,9 @@
 import project5hero from "../assets/project-05-hero.png";
 import project5Img1 from "../assets/project-05-feature1.png";
 import project5Img2 from "../assets/project-05-feature2.png";
+import project7hero from "../assets/project-07-hero.png";
+import project7Img1 from "../assets/project-07-feature1.png";
+import project7Img2 from "../assets/project-07-feature2.png";
 
 export function initPortfolio () {
   document.querySelectorAll('.accordion-trigger').forEach(btn => {
@@ -111,34 +114,39 @@ export default function renderPortfolio() {
         </div>
       </section>
 
-      <section class="py-24 border-t border-border" hidden>
+      <section class="py-24 border-t border-border">
         <div class="main-container flex flex-col">
-          <span class="text-overline">// project 00</span>
+          <span class="text-overline">// project 01</span>
           <div class="flex max-sm:flex-col max-sm:gap-5 sm:items-center justify-between">
-            <h3>Whiteboard</h3>
+            <h3>Country Explorer</h3>
             <div class="flex gap-3 flex-wrap">
-              <a href="https://fxzan.github.io/portfolio/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Live <span class="link-ico">↗</span></a>
-              <a href="https://github.com/fxzan/portfolio" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub <span class="link-ico">↗</span></a>
+              <a href="https://fxzan.github.io/country-explorer/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Live <span class="link-ico">↗</span></a>
+              <a href="https://github.com/fxzan/country-explorer" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub <span class="link-ico">↗</span></a>
             </div>
           </div>
           <p class="text-body-lg max-w-[60ch] my-6">
-            
+            A client-side country explorer built on a custom History API router with stale-render-safe navigation. Users bring their own free REST Countries API key (stored locally, never sent anywhere else), with an optional local cache of the full country dataset to avoid re-fetching. Includes a searchable/filterable grid, a side-by-side comparison view, a per-country detail page with an embedded Leaflet map, and a clustered world map of every country.
           </p>
           <div class="tech-tag-group mb-8">
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">Tailwind CSS</span>
+            <span class="tech-tag">Vanilla JS</span>
+            <span class="tech-tag">SPA Routing</span>
+            <span class="tech-tag">History API</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">Debounced search</span>
+            <span class="tech-tag">Race condition handling</span>
+            <span class="tech-tag">Leaflet</span>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-[1fr_1fr] gap-4">
-            <div class="screenshot screenshot-wide text-placeholder">// screenshot - hero / home </div>
-            <div class="screenshot text-placeholder">// screenshot - feature 1 </div>
-            <div class="screenshot text-placeholder">// screenshot - feature 2 </div>
+            <div class="screenshot screenshot-wide text-placeholder"><img src="${project7hero}" alt="Project 01 Screenshot 01" class="w-full h-full object-cover object-top" /></div>
+            <div class="screenshot text-placeholder"><img src="${project7Img1}" alt="Project 01 Screenshot 02" class="w-full h-full object-cover object-top" /></div>
+            <div class="screenshot text-placeholder"><img src="${project7Img2}" alt="Project 01 Screenshot 03" class="w-full h-full object-cover object-top" /></div>
           </div>
         </div>
       </section>
 
       <section class="py-24 border-t border-border">
         <div class="main-container flex flex-col">
-          <span class="text-overline">// project 01</span>
+          <span class="text-overline">// project 02</span>
           <div class="flex max-sm:flex-col max-sm:gap-5 sm:items-center justify-between">
             <h3>Amplidia</h3>
             <div class="flex gap-3 flex-wrap">
@@ -159,9 +167,9 @@ export default function renderPortfolio() {
             <span class="tech-tag">Dark mode</span>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-[1fr_1fr] gap-4">
-            <div class="screenshot screenshot-wide text-placeholder"><img src="${project5hero}" alt="Project 01 Screenshot 01" class="w-full h-full object-cover object-top" /></div>
-            <div class="screenshot text-placeholder"><img src="${project5Img1}" alt="Project 01 Screenshot 02" class="w-full h-full object-cover object-top" /></div>
-            <div class="screenshot text-placeholder"><img src="${project5Img2}" alt="Project 01 Screenshot 03" class="w-full h-full object-cover object-top" /></div>
+            <div class="screenshot screenshot-wide text-placeholder"><img src="${project5hero}" alt="Project 02 Screenshot 01" class="w-full h-full object-cover object-top" /></div>
+            <div class="screenshot text-placeholder"><img src="${project5Img1}" alt="Project 02 Screenshot 02" class="w-full h-full object-cover object-top" /></div>
+            <div class="screenshot text-placeholder"><img src="${project5Img2}" alt="Project 02 Screenshot 03" class="w-full h-full object-cover object-top" /></div>
           </div>
         </div>
       </section>
