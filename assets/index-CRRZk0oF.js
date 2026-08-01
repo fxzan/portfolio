@@ -77,7 +77,7 @@
         </div>
       </section>
     </div>
-  `}var n=`/portfolio/assets/project-05-hero-C9SulkEN.png`,r=`/portfolio/assets/project-05-feature1-CVgq8rmg.png`,i=`/portfolio/assets/project-05-feature2-DLx9dZld.png`;function a(){document.querySelectorAll(`.accordion-trigger`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.getAttribute(`aria-expanded`)===`true`,n=document.getElementById(e.getAttribute(`aria-controls`));document.querySelectorAll(`.accordion-trigger`).forEach(e=>{e.setAttribute(`aria-expanded`,`false`),e.querySelector(`.accordion-icon`).classList.remove(`rotate-45`);let t=document.getElementById(e.getAttribute(`aria-controls`));t.setAttribute(`inert`,``),t.style.maxHeight=0}),t||(e.setAttribute(`aria-expanded`,`true`),e.querySelector(`.accordion-icon`).classList.add(`rotate-45`),n.removeAttribute(`inert`),n.style.maxHeight=`30rem`)})})}function o(){return`
+  `}var n=`/portfolio/assets/project-05-hero-C9SulkEN.png`,r=`/portfolio/assets/project-05-feature1-CVgq8rmg.png`,i=`/portfolio/assets/project-05-feature2-DLx9dZld.png`,a=`/portfolio/assets/project-07-hero-BVDJYWpV.png`,o=`/portfolio/assets/project-07-feature1-DpSSLPh5.png`,s=`/portfolio/assets/project-07-feature2-DOa5Cz4X.png`;function c(){document.querySelectorAll(`.accordion-trigger`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.getAttribute(`aria-expanded`)===`true`,n=document.getElementById(e.getAttribute(`aria-controls`));document.querySelectorAll(`.accordion-trigger`).forEach(e=>{e.setAttribute(`aria-expanded`,`false`),e.querySelector(`.accordion-icon`).classList.remove(`rotate-45`);let t=document.getElementById(e.getAttribute(`aria-controls`));t.setAttribute(`inert`,``),t.style.maxHeight=0}),t||(e.setAttribute(`aria-expanded`,`true`),e.querySelector(`.accordion-icon`).classList.add(`rotate-45`),n.removeAttribute(`inert`),n.style.maxHeight=`30rem`)})})}function l(){return`
     <div class="animate-fade-in-left">
       <section class="pt-20 sm:pt-24 pb-16 main-container flex flex-col">
         <span class="text-overline">// selected work</span>
@@ -160,34 +160,39 @@
         </div>
       </section>
 
-      <section class="py-24 border-t border-border" hidden>
+      <section class="py-24 border-t border-border">
         <div class="main-container flex flex-col">
-          <span class="text-overline">// project 00</span>
+          <span class="text-overline">// project 01</span>
           <div class="flex max-sm:flex-col max-sm:gap-5 sm:items-center justify-between">
-            <h3>Whiteboard</h3>
+            <h3>Country Explorer</h3>
             <div class="flex gap-3 flex-wrap">
-              <a href="https://fxzan.github.io/portfolio/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Live <span class="link-ico">↗</span></a>
-              <a href="https://github.com/fxzan/portfolio" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub <span class="link-ico">↗</span></a>
+              <a href="https://fxzan.github.io/country-explorer/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Live <span class="link-ico">↗</span></a>
+              <a href="https://github.com/fxzan/country-explorer" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub <span class="link-ico">↗</span></a>
             </div>
           </div>
           <p class="text-body-lg max-w-[60ch] my-6">
-            
+            A client-side country explorer built on a custom History API router with stale-render-safe navigation. Users bring their own free REST Countries API key (stored locally, never sent anywhere else), with an optional local cache of the full country dataset to avoid re-fetching. Includes a searchable/filterable grid, a side-by-side comparison view, a per-country detail page with an embedded Leaflet map, and a clustered world map of every country.
           </p>
           <div class="tech-tag-group mb-8">
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">Tailwind CSS</span>
+            <span class="tech-tag">Vanilla JS</span>
+            <span class="tech-tag">SPA Routing</span>
+            <span class="tech-tag">History API</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">Debounced search</span>
+            <span class="tech-tag">Race condition handling</span>
+            <span class="tech-tag">Leaflet</span>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-[1fr_1fr] gap-4">
-            <div class="screenshot screenshot-wide text-placeholder">// screenshot - hero / home </div>
-            <div class="screenshot text-placeholder">// screenshot - feature 1 </div>
-            <div class="screenshot text-placeholder">// screenshot - feature 2 </div>
+            <div class="screenshot screenshot-wide text-placeholder"><img src="${a}" alt="Project 01 Screenshot 01" class="w-full h-full object-cover object-top" /></div>
+            <div class="screenshot text-placeholder"><img src="${o}" alt="Project 01 Screenshot 02" class="w-full h-full object-cover object-top" /></div>
+            <div class="screenshot text-placeholder"><img src="${s}" alt="Project 01 Screenshot 03" class="w-full h-full object-cover object-top" /></div>
           </div>
         </div>
       </section>
 
       <section class="py-24 border-t border-border">
         <div class="main-container flex flex-col">
-          <span class="text-overline">// project 01</span>
+          <span class="text-overline">// project 02</span>
           <div class="flex max-sm:flex-col max-sm:gap-5 sm:items-center justify-between">
             <h3>Amplidia</h3>
             <div class="flex gap-3 flex-wrap">
@@ -208,9 +213,9 @@
             <span class="tech-tag">Dark mode</span>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-[1fr_1fr] gap-4">
-            <div class="screenshot screenshot-wide text-placeholder"><img src="${n}" alt="Project 01 Screenshot 01" class="w-full h-full object-cover object-top" /></div>
-            <div class="screenshot text-placeholder"><img src="${r}" alt="Project 01 Screenshot 02" class="w-full h-full object-cover object-top" /></div>
-            <div class="screenshot text-placeholder"><img src="${i}" alt="Project 01 Screenshot 03" class="w-full h-full object-cover object-top" /></div>
+            <div class="screenshot screenshot-wide text-placeholder"><img src="${n}" alt="Project 02 Screenshot 01" class="w-full h-full object-cover object-top" /></div>
+            <div class="screenshot text-placeholder"><img src="${r}" alt="Project 02 Screenshot 02" class="w-full h-full object-cover object-top" /></div>
+            <div class="screenshot text-placeholder"><img src="${i}" alt="Project 02 Screenshot 03" class="w-full h-full object-cover object-top" /></div>
           </div>
         </div>
       </section>
@@ -381,7 +386,7 @@
         </div>
       </section>
     </div>
-  `}function s(){return`
+  `}function u(){return`
   <div class="animate-fade-in">
     <div class="main-container flex flex-col justify-center pt-24 pb-16">
         <span class="text-overline">
@@ -397,4 +402,4 @@
       </div>
     </div>
   </div>
-  `}var c=`/portfolio/`.replace(/\/$/,``),l=document.querySelector(`header`),u=document.getElementById(`app-container`),d=document.getElementById(`burger-button`),f=document.getElementById(`close-burger-button`),p=document.getElementById(`burger-nav-links`),m=document.getElementById(`overlay`),h=null,g=null;function _(e,t){let n=e.querySelectorAll(`a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])`),r=n[0],i=n[n.length-1];r?.focus(),e.addEventListener(`keydown`,e=>{e.key===`Escape`&&y(),e.key===`Tab`&&(e.shiftKey?document.activeElement===r&&(e.preventDefault(),i?.focus()):document.activeElement===i&&(e.preventDefault(),r?.focus()))},{signal:t}),e.addEventListener(`mousedown`,t=>{t.target===e&&t.preventDefault()},{signal:t})}function v(){g=new AbortController;let{signal:e}=g;p.classList.remove(`max-sm:invisible`),p.classList.add(`max-sm:-translate-x-52`),d.setAttribute(`aria-expanded`,`true`),d.classList.add(`opacity-0`),m.classList.remove(`pointer-events-none`,`opacity-0`,`invisible`),document.body.classList.add(`overflow-hidden`),_(p,e)}function y(){p.classList.remove(`max-sm:-translate-x-52`),p.classList.add(`max-sm:invisible`),d.setAttribute(`aria-expanded`,`false`),d.classList.remove(`opacity-0`),m.classList.add(`pointer-events-none`,`opacity-0`),setTimeout(()=>{m.classList.add(`invisible`)},300),document.body.classList.remove(`overflow-hidden`),d.focus(),g?.abort()}d.addEventListener(`click`,v),f.addEventListener(`click`,y),m.addEventListener(`click`,y),p.querySelectorAll(`a`).forEach(e=>{e.addEventListener(`click`,y)});var b={"/":t,"/portfolio":o},x={"/":`About | fxzan`,"/portfolio":`Portfolio | fxzan`};function S(){return window.location.pathname.replace(c,``)||`/`}function C(e){let t=e===`/`?`about`:e.replace(`/`,``);document.querySelectorAll(`.nav-link`).forEach(e=>{e.dataset.page===t?e.setAttribute(`aria-current`,`page`):e.removeAttribute(`aria-current`)})}function w(){let e=S();h=e,C(e);let t=b[e]??s;document.title=x[e]??`404 | fxzan`,u.innerHTML=t(),e===`/portfolio`&&a(),window.location.hash?document.querySelector(window.location.hash)?.scrollIntoView():window.scrollTo(0,0),document.getElementById(`initial-loader`)?.remove()}document.addEventListener(`click`,e=>{let t=e.target.closest(`a`);if(!t)return;let n=t.getAttribute(`href`);t.target!==`_blank`&&(t.href&&!t.href.startsWith(window.location.origin)||n.startsWith(`#`)&&(n!==`#contact`||h===`/`)||(e.preventDefault(),h!==n&&(n===`#contact`?history.pushState(null,``,c+`/`+n):history.pushState(null,``,c+n),w())))}),window.addEventListener(`popstate`,()=>{h!==S()&&w()}),window.addEventListener(`scroll`,()=>l.classList.toggle(`hdr-scrolled`,scrollY>10),{passive:!0}),w();
+  `}var d=`/portfolio/`.replace(/\/$/,``),f=document.querySelector(`header`),p=document.getElementById(`app-container`),m=document.getElementById(`burger-button`),h=document.getElementById(`close-burger-button`),g=document.getElementById(`burger-nav-links`),_=document.getElementById(`overlay`),v=null,y=null;function b(e,t){let n=e.querySelectorAll(`a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])`),r=n[0],i=n[n.length-1];r?.focus(),e.addEventListener(`keydown`,e=>{e.key===`Escape`&&S(),e.key===`Tab`&&(e.shiftKey?document.activeElement===r&&(e.preventDefault(),i?.focus()):document.activeElement===i&&(e.preventDefault(),r?.focus()))},{signal:t}),e.addEventListener(`mousedown`,t=>{t.target===e&&t.preventDefault()},{signal:t})}function x(){y=new AbortController;let{signal:e}=y;g.classList.remove(`max-sm:invisible`),g.classList.add(`max-sm:-translate-x-52`),m.setAttribute(`aria-expanded`,`true`),m.classList.add(`opacity-0`),_.classList.remove(`pointer-events-none`,`opacity-0`,`invisible`),document.body.classList.add(`overflow-hidden`),b(g,e)}function S(){g.classList.remove(`max-sm:-translate-x-52`),g.classList.add(`max-sm:invisible`),m.setAttribute(`aria-expanded`,`false`),m.classList.remove(`opacity-0`),_.classList.add(`pointer-events-none`,`opacity-0`),setTimeout(()=>{_.classList.add(`invisible`)},300),document.body.classList.remove(`overflow-hidden`),m.focus(),y?.abort()}m.addEventListener(`click`,x),h.addEventListener(`click`,S),_.addEventListener(`click`,S),g.querySelectorAll(`a`).forEach(e=>{e.addEventListener(`click`,S)});var C={"/":t,"/portfolio":l},w={"/":`About | fxzan`,"/portfolio":`Portfolio | fxzan`};function T(){return window.location.pathname.replace(d,``)||`/`}function E(e){let t=e===`/`?`about`:e.replace(`/`,``);document.querySelectorAll(`.nav-link`).forEach(e=>{e.dataset.page===t?e.setAttribute(`aria-current`,`page`):e.removeAttribute(`aria-current`)})}function D(){let e=T();v=e,E(e);let t=C[e]??u;document.title=w[e]??`404 | fxzan`,p.innerHTML=t(),e===`/portfolio`&&c(),window.location.hash?document.querySelector(window.location.hash)?.scrollIntoView():window.scrollTo(0,0),document.getElementById(`initial-loader`)?.remove()}document.addEventListener(`click`,e=>{let t=e.target.closest(`a`);if(!t)return;let n=t.getAttribute(`href`);t.target!==`_blank`&&(t.href&&!t.href.startsWith(window.location.origin)||n.startsWith(`#`)&&(n!==`#contact`||v===`/`)||(e.preventDefault(),v!==n&&(n===`#contact`?history.pushState(null,``,d+`/`+n):history.pushState(null,``,d+n),D())))}),window.addEventListener(`popstate`,()=>{v!==T()&&D()}),window.addEventListener(`scroll`,()=>f.classList.toggle(`hdr-scrolled`,scrollY>10),{passive:!0}),D();
